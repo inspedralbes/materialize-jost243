@@ -32,11 +32,14 @@
                 <div class="card-image">
                   <img src="img/dune.jpg">
                   <span class="card-title">Dune</span>
+
                   <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">+</i></a>
                 </div>
+                <!--
                 <div class="card-content">
                   <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
                 </div>
+              -->
             </div>
         </div>
 
@@ -169,6 +172,14 @@
             </div>
         </div>
     </div>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.fixed-action-btn');
+        var instances = M.FloatingActionButton.init(elems, options);
+      });
+    </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
